@@ -10,11 +10,7 @@ import { UsersContextProvider } from './context/UsersContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
  
 <>
-  
-  <UsersContextProvider>
-    
-  <Header/>
-    <ProfileList/>
-  </UsersContextProvider>
+  <App/>
+
 </>
 )

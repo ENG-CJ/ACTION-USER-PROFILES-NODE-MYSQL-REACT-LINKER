@@ -15,16 +15,30 @@ export const UsersContextProvider = (props) => {
     axios
       .get("http://localhost:8000/profile")
       .then((result) => {
-        setUsers(result.data.data);
-       
+      
+        // setUsers(result.data.data);
+      //  toast.error(result.data.err && result.data.message,{duration: 5000});
+              result.data.err
+                ? toast.error(result.data.message, { duration: 5000 })
+                : setUsers(result.data.data);
+
       })
-      .catch((err) => console.log(err));
+      .catch((err) => toast.error(err.message));
   };
   const fetchProfile = (id) => {
     axios
       .get("http://localhost:8000/profile/"+id)
       .then((result) => {
         setSingleProfile(result.data.data[0]);
+       
+      })
+      .catch((err) => console.log(err));
+  };
+  const searchProfile = (username) => {
+    axios
+      .get("http://localhost:8000/profile/search/" + username)
+      .then((result) => {
+        result.data.err?  toast.error(result.data.message,{duration: 5000}): setUsers(result.data.data[0]);
        
       })
       .catch((err) => console.log(err));
@@ -78,6 +92,7 @@ export const UsersContextProvider = (props) => {
          singleProfile,
          setSingleProfile,
          UpdateProfileData,
+         searchProfile,
        }}
      >
        {props.children}
