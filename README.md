@@ -10,9 +10,8 @@ And run same command <kbd>npm install</kbd>
 the client folder and run this command <kbd>npm run dev</kbd>
 
 # Rore Profiles Screen
-![](c1.PNG)
-![](c2.PNG)
-![](c3.PNG)
+<img src="c1.PNG"/>
+
 
 # ANY Help
 Email: abdulrahmandev10@gmail.com
