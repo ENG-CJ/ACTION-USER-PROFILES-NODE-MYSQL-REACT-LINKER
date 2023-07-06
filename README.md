@@ -14,5 +14,8 @@ the client folder and run this command <kbd>npm run dev</kbd>
 <img src="c2.PNG" style="margin-bottom: 10px;"/>
 <img src="c3.PNG" style="margin-bottom: 10px;"/>
 
+
 # ANY Help
-Email: abdulrahmandev10@gmail.com
+Email: abdulrahmandev10@gmail.com<br>
+for testing purpose you can use this link [https://hirehero.000webhostapp.com/], note max_connection must be 70/exe.<br.
+<kbd>Refresh or reload if server error occurred</kbd>👍😊
